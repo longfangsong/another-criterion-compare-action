@@ -1,0 +1,10 @@
+name: "Criterion Compare PRs"
+description: "Run Criterion against PRs"
+inputs:
+  token:
+    description: "Github Token required to upload to the PR"
+    required: true
+    default: ""
+runs:
+  using: "node12"
+  main: "dist/index.js"
