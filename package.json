@@ -1,0 +1,22 @@
+{
+  "name": "another-criterion-compare-action",
+  "version": "1.0.0",
+  "description": "Compare the performance of Rust project branches using criterion",
+  "main": "index.ts",
+  "repository": "https://github.com/longfangsong/criterion-compare-action.git",
+  "author": "longfangsong <longfangsong@icloud.com>",
+  "license": "Unlicense",
+  "private": false,
+  "scripts": {
+    "build": "tsc index.ts && ncc build index.js"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^4.0.0"
+  }
+}
